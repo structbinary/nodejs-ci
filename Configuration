@@ -1,0 +1,12 @@
+git_url           = https://github.com/structbinary/nodejs-ci.git
+git_branch        = master
+project_dir       = .
+unit_test         = true
+code_coverage     = true
+sonar_scan        = true
+snyk_scan         = false
+snyk_package      = synk@latest
+snyk_token_name   = synck-token
+owasp_scan        = false
+create_artifact   = true
+do_deployment     = true
