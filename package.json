@@ -1,0 +1,42 @@
+{
+  "name": "nodejs-ci",
+  "version": "1.0.0",
+  "description": "Simple project setup for writing Nodejs apps unit testing with Mocha, Chai, and code coverage with Istanbul and finally publishing test report to sonar",
+  "scripts": {
+    "example": "node index.js",
+    "example2": "node index.js Hey world!",
+    "test": "./node_modules/mocha/bin/_mocha",
+    "code-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
+    "sonar": "gulp sonar"
+  },
+  "author": {
+    "name": "sandeep mahto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/structbinary/nodejs-ci.git"
+  },
+  "keywords": [
+    "ES6",
+    "ES2015",
+    "nodejs",
+    "mocha",
+    "chia",
+    "istanbul",
+    "tdd",
+    "sinon",
+    "unit test",
+    "sonar",
+    "sonarqube"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^6.2.0",
+    "sinon": "^1.17.5",
+    "sinon-chai": "^2.8.0",
+    "sonarqube-scanner": "^2.0.1"
+  }
+}
