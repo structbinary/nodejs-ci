@@ -4,4 +4,5 @@ This repro demonstrates how to implement a Nodejs project that uses ES6, Mocha, 
 
 Please read my blog post here: 
 
-## TO-DO:integrate static code analysis(jshint)
+## Final Sonar Published Report
+![](../img/sonar_report.png)
