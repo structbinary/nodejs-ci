@@ -5,9 +5,9 @@
   "scripts": {
     "example": "node index.js",
     "example2": "node index.js Hey world!",
-    "test": "snyk test && ./node_modules/mocha/bin/_mocha",
+    "test": "./node_modules/mocha/bin/_mocha",
     "code-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
-    "code-scan": "snyk test --json > snyk.json",
+    "code-scan": "snyk test --json && snyk monitor",
     "sonar": "gulp sonar",
     "code-quality": "./node_modules/.bin/eslint . -f json -o report.json; exit 0"
   },
