@@ -5,9 +5,11 @@
   "scripts": {
     "example": "node index.js",
     "example2": "node index.js Hey world!",
-    "test": "./node_modules/mocha/bin/_mocha",
+    "test": "snyk test && ./node_modules/mocha/bin/_mocha",
     "code-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
-    "sonar": "gulp sonar"
+    "code-scan": "snyk test --json > snyk.json",
+    "sonar": "gulp sonar",
+    "code-quality": "./node_modules/.bin/eslint . -f json -o report.json; exit 0"
   },
   "author": {
     "name": "sandeep mahto"
@@ -37,6 +39,9 @@
     "mocha": "^6.2.0",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0",
-    "sonarqube-scanner": "^2.0.1"
+    "sonarqube-scanner": "^2.0.1",
+    "eslint": "^6.4.0",
+    "eslint-plugin-react": "^7.14.3",
+    "snyk": "^1.19.1"
   }
 }
